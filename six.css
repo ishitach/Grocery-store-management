@@ -1,0 +1,87 @@
+body, html {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+fieldset {
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.row {
+    padding: 5px 15px 5px 15px;
+    width: 85%;
+}
+
+    .row label {
+        float: left;
+        width: 20%;
+    }
+
+#btsubmit, #btcancel {
+    font-size: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#close {
+    height: 10px;
+    width: 10px;
+}
+
+#btsubmit:hover, #btcancel:hover {
+    box-shadow: -5px -5px 10px black;
+    font-weight: bold;
+}
+
+#grocerylist {
+    border: solid black;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    background-color: lightgoldenrodyellow;
+    width: 85%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#newlist {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+    #newlist li {
+        opacity: 0.8;
+        position: relative;
+        font-size: 15px;
+        margin: 5px;
+        background-color: cyan;
+        border: 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        padding-left: 10px;
+    }
+
+        #newlist li button {
+            cursor: pointer;
+        }
+
+        #newlist li:hover {
+            opacity: 1;
+        }
+
+        #newlist li span[id="closediv"] {
+            top: 10%;
+            cursor: pointer;
+            position: absolute;
+            right: 0%;
+            margin-right: 20px;
+        }
+
+            #newlist li span[id="closediv"]:hover {
+                transform: scale(1.5,1.5);
+            }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Grocery-store</title>
+
+    <link rel="stylesheet" href="six.css" />
+</head>
+
+<body>
+    <form id="grocery_form" method="GET">
+
+        <fieldset>
+
+            <legend id="legend_name"><b>Grocery-form</b></legend>
+
+
+            <div class="row">
+                <label for="groceryname">Grocery name</label>
+                <input type="text" id="groceryname" placeholder="Enter name of grocery" required/>
+            </div>
+            <div class="row">
+                <label for="grocerydesc">Grocery Description</label>
+                <textarea id="grocerydesc" rows="6" columns="25" placeholder="Enter the description of grocery"></textarea>
+            </div>
+            <div class="row">
+                <label for="groceryprice">Grocery price</label>
+                <input type="number" id="groceryprice" required/>
+            </div>
+
+            <input type="submit" id="btsubmit" value="Submit" />
+            <input type="reset" id="btcancel" value="Cancel" />
+        </fieldset>
+    </form>
+    
+
+    <div id="grocerylist">
+        <h3>List of groceries</h3>
+        <ul id="newlist"></ul>
+    </div>
+
+    <script type="text/template" id="grocerytemp">
+        <!--<li>-->
+         <!--<span id="closediv" actions="delete" ><img id="close" src="15106-illustration-of-a-red-close-button-pv.png" /></span>-->
+        <span id="closediv" action="delete">Close</span>
+            <h2 g_data="{{name}}" purpose="name">{{name}} </h2>
+        <p g_data="{{desc}}" purpose="desc" >{{desc}} </p>
+            <b>$</b>
+        <span g_data="{{price}}" purpose="price">{{price}}</span>
+       
+        <!--</li>-->
+    </script>
+    <script type="text/javascript" src="./replace.js"> </script>
+    <script type="text/javascript" src="./index.js"> </script>
+</body>
+</html>
